@@ -58,28 +58,28 @@ TaskFlow is a full-stack task management web application built with the **MERN s
    ```bash
    git clone git@github.com:eromsinghal/task-flow.git
    ```
-## Backend Setup
+# Backend Setup
    ```bash
       cd task-flow/backend
       npm install
    ```
-   # Set up environment variables
+   ### Set up environment variables
    PORT=5000
    MONGO_URI=your_mongodb_connection_string
    JWT_SECRET=your_jwt_secret_key
 
-   # Run the backend server
+   ### Run the backend server
    npm run dev
 
-## Frontend Setup
+# Frontend Setup
    ```bash
       cd task-flow/frontend
       npm install
    ```
-   # Set up environment variables
+   ### Set up environment variables
    REACT_APP_API_URL=http://localhost:5000
    
-   #  Run the frontend
+   ###  Run the frontend
    npm start
 
    --- 
