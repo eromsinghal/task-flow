@@ -47,8 +47,8 @@ TaskFlow is a full-stack task management web application built with the **MERN s
 ## Live Demo
 
 🚀 **Check out the live application:**  
-🔗 [https://taskflow.example.com](https://taskflow.example.com)  
-*(Replace with your actual live URL.)*
+ # Frontend - https://task-flow-frontend-b6ijo5a87-eromsinghals-projects.vercel.app/login
+ # Backend https://task-flow-backend.vercel.app
 
 ## Setup and Installation
 
@@ -101,16 +101,3 @@ TaskFlow is a full-stack task management web application built with the **MERN s
   - **"Profile" Button**
   - **"Logout" Button**
 - **Consistent API Configuration** - Uses `config.js` for dynamic API endpoint switching.
-
----
-
-## Deployment
-
-### ✅ Backend Deployment
-The backend is deployed on a cloud platform (e.g., **Heroku, Render, AWS**) at:  
-🔗 [https://your-backend-url.com](https://your-backend-url.com)
-
-### ✅ Frontend Deployment
-The frontend is hosted on a cloud platform (e.g., **Netlify, Vercel, AWS Amplify**) at:  
-🔗 [https://your-frontend-url.com](https://your-frontend-url.com)
-
