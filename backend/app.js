@@ -15,6 +15,11 @@ app.use(cors({
 app.use('/api/auth', authRoutes);
 app.use('/api/tasks', taskRoutes);
 
+// ✅ Add a default route for Vercel
+app.get("/", (req, res) => {
+   res.send("TaskFlow Backend is running!");
+});
+
 // Error Handling Middleware
 app.use(errorHandler);
 

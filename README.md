@@ -48,9 +48,9 @@ TaskFlow is a full-stack task management web application built with the **MERN s
 
 🚀 **Check out the live application:**  
  # Frontend 
- - https://task-flow-frontend-b6ijo5a87-eromsinghals-projects.vercel.app/login
+ - https://task-flow-frontend-three.vercel.app
  # Backend 
-  - https://task-flow-backend.vercel.app
+  - https://task-flow-backend-ten.vercel.app
 
 ## Setup and Installation
 
