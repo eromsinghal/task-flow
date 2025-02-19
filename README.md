@@ -4,23 +4,17 @@ TaskFlow is a full-stack task management web application built with the **MERN s
 
 ## Table of Contents
 
-- [Features](#features)
-- [Technologies](#technologies)
-- [Live Demo](#live-demo)
-- [Setup and Installation](#setup-and-installation)
-  - [Backend Setup](#backend-setup)
-  - [Frontend Setup](#frontend-setup)
-- [Main Workflows](#main-workflows)
-- [Deployment](#deployment)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
+- Features
+- Technologies
+- Live Demo
+- Setup and Installation
+- Main Workflows
+- Code structure
 
 ## Features
 
 ✅ **User Authentication** - Secure login and registration using **JWT authentication**  
 ✅ **Task Management** - Users can **create, view, update, and delete** tasks  
-✅ **Modern UI** - Responsive design with **CSS Modules** and a **sticky header**  
 ✅ **Navigation Bar** - A **sticky header** featuring the **TaskFlow** logo and navigation buttons  
 ✅ **Centralized API Configuration** - Easily switch between **local and production environments**  
 ✅ **Secure API** - Uses **bcrypt** for password hashing and **JWT for authentication**  
@@ -28,7 +22,7 @@ TaskFlow is a full-stack task management web application built with the **MERN s
 
 ## Technologies
 
-### 🌐 **Frontend**
+### **Frontend**
 - React.js (Hooks, Context API)
 - React Router DOM
 - CSS Modules for modular styling
@@ -45,62 +39,72 @@ TaskFlow is a full-stack task management web application built with the **MERN s
 - Git, npm, dotenv for environment management
 
 ## Live Demo
-
-🚀 **Check out the live application:**  
- # Frontend 
+ ### Frontend 
  - https://task-flow-frontend-three.vercel.app
- # Backend 
+ ### Backend 
   - https://task-flow-backend-ten.vercel.app
 
 ## Setup and Installation
 
-1️⃣ **Clone the repository**  
+### Clone the repository
    ```bash
    git clone git@github.com:eromsinghal/task-flow.git
    ```
-# Backend Setup
+### Backend Setup
    ```bash
-      cd task-flow/backend
-      npm install
+    cd task-flow/backend
+    npm install  // install dependencies
+    npm run dev  // run server
    ```
-   ### Set up environment variables
+   #### Set up environment variables for backend
+   ```bash
    PORT=5000
    MONGO_URI=your_mongodb_connection_string
    JWT_SECRET=your_jwt_secret_key
+  ```
 
-   ### Run the backend server
-   npm run dev
-
-# Frontend Setup
+### Frontend Setup
    ```bash
-      cd task-flow/frontend
-      npm install
+    cd task-flow/frontend
+    npm install // install dependencies
+    npm start  // run frontend app
    ```
-   ### Set up environment variables
-   REACT_APP_API_URL=http://localhost:5000
-   
-   ###  Run the frontend
-   npm start
-
-   --- 
+   #### Set up environment variables for frontend
+   ```bash
+    REACT_APP_API_URL=http://localhost:5000
+   ```
 
 ## Main Workflows
 
-### 🔐 User Authentication
+### User Authentication
 - **User Registration** - Users sign up securely using email and password.
 - **Login** - Users receive a **JWT token** upon successful login.
 - **Logout** - Token is removed from local storage.
 
-### 📋 Task Management
+### Task Management
 - **Create Task** - Users can add new tasks.
 - **Task List View** - Users can view their existing tasks in a **responsive layout**.
 - **Edit Task** - Users can modify task details (title, description, status).
 - **Delete Task** - Tasks can be removed with a single click.
 
-### 🏗 Navigation & UI
+### Navigation & UI
 - **Sticky Header** - Contains:
   - **TaskFlow Logo**
-  - **"Create Task" Button**
   - **"Profile" Button**
   - **"Logout" Button**
-- **Consistent API Configuration** - Uses `config.js` for dynamic API endpoint switching.
+
+## Code structure
+
+### Frontend (/frontend)
+- **src** - Contains the overall code
+- **src/components** - Contains all components and every component has thier own js and css file
+- **Others** - index.js -> App.js serves as entry point and inside App.js all routes are defined
+
+### Backend (/backend)
+- **Controllers** - There is auth and task controller use to get and process data from models 
+- **Middlewares** - There is auth and error middleware use to authenticate every route and handle error in every route
+- **Models** - Models are used to have the schema defined for different mongodb collection and different models are created with the help of mongoose
+- **Routes** - There is auth and task routes use to interact with controllers
+- **tests** - Test cases for testing purpose
+- **others** - Server.js -> App.js are entrypoints and App.js import all routes 
+
