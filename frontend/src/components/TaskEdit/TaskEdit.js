@@ -4,6 +4,7 @@ import axios from 'axios';
 import TaskForm from '../TaskForm/TaskForm';
 import styles from './TaskEdit.module.css';
 import { API_URL } from '../../config';
+import Loading from "../Loading/Loading";
 
 
 const TaskEdit = ({ config }) => {
@@ -46,7 +47,7 @@ const TaskEdit = ({ config }) => {
           config={config}
         />
       ) : (
-        <div>Loading task details...</div>
+        <Loading /> 
       )}
       <button
         onClick={() => {

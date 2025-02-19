@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
 import { API_URL } from '../../config';
+import Loading from "../Loading/Loading";
 
 const HomeRedirect = () => {
   const storedUserInfo = localStorage.getItem('userInfo');
@@ -34,7 +35,7 @@ const HomeRedirect = () => {
     }
   }, [userInfo]);
 
-  return <div>Loading...</div>;
+  return  <Loading /> ;
 };
 
 export default HomeRedirect;
