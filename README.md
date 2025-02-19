@@ -1,6 +1,6 @@
 # TaskFlow Task Manager Web Application
 
-TaskFlow is a full-stack task management web application built with the **MERN stack** (MongoDB, Express, React, Node.js). It allows users to register, log in, and manage their tasks with full **CRUD functionality** (Create, Read, Update, Delete). The app features **JWT-based authentication**, a **modern and responsive UI**, and centralized API configuration for seamless deployment across different environments.
+TaskFlow is a full-stack task management web application built with the **MERN stack** (MongoDB, Express, React, Node.js). It allows users to register, log in, and manage their tasks with full **CRUD functionality** (Create, Read, Update, Delete). The app features **JWT-based authentication**
 
 ## Table of Contents
 
@@ -13,12 +13,11 @@ TaskFlow is a full-stack task management web application built with the **MERN s
 
 ## Features
 
-✅ **User Authentication** - Secure login and registration using **JWT authentication**  
-✅ **Task Management** - Users can **create, view, update, and delete** tasks  
-✅ **Navigation Bar** - A **sticky header** featuring the **TaskFlow** logo and navigation buttons  
-✅ **Centralized API Configuration** - Easily switch between **local and production environments**  
-✅ **Secure API** - Uses **bcrypt** for password hashing and **JWT for authentication**  
-✅ **Error Handling** - Proper validation and meaningful error messages  
+**User Authentication** - Secure login and registration using **JWT authentication**  
+**Task Management** - Users can **create, view, update, and delete** tasks  
+**Navigation Bar** - A **sticky header** featuring the **TaskFlow** logo and navigation buttons  
+**Secure API** - Uses **bcrypt** for password hashing and **JWT for authentication**  
+**Error Handling** - Proper validation and meaningful error messages  
 
 ## Technologies
 
@@ -28,14 +27,13 @@ TaskFlow is a full-stack task management web application built with the **MERN s
 - CSS Modules for modular styling
 - Axios for API requests
 
-### ⚙ **Backend**
+### **Backend**
 - Node.js and Express.js
 - MongoDB + Mongoose (Database)
 - JWT Authentication for secure login
 - bcrypt for password hashing
 
-### 🛠 **Other Tools**
-- Jest + Supertest for Backend Testing
+### **Other Tools**
 - Git, npm, dotenv for environment management
 
 ## Live Demo
@@ -93,7 +91,7 @@ TaskFlow is a full-stack task management web application built with the **MERN s
   - **"Profile" Button**
   - **"Logout" Button**
 
-## Code structure
+## Code Structure
 
 ### Frontend (/frontend)
 - **src** - Contains the overall code
